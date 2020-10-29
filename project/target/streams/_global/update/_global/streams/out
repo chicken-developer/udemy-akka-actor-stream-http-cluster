@@ -1,0 +1,9 @@
+[debug] "not up to date. inChanged = false, force = false
+<<<<<<< HEAD
+[debug] Updating ProjectRef(uri("file:/D:/CodeProject/Scala/Akka/project/"), "akka-build")...
+[debug] Done updating ProjectRef(uri("file:/D:/CodeProject/Scala/Akka/project/"), "akka-build")
+=======
+[debug] Updating ProjectRef(uri("file:/Users/admin/Desktop/Project/Scala/Akka/project/"), "akka-build")...
+[debug] Done updating ProjectRef(uri("file:/Users/admin/Desktop/Project/Scala/Akka/project/"), "akka-build")
+>>>>>>> b8d94212761607eeca45521949555563452632c5
+[warn] There may be incompatibilities among your library dependencies; run 'evicted' to see detailed eviction warnings.

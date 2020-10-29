@@ -1,0 +1,5 @@
+<<<<<<< HEAD
+["sbt.Task[scala.collection.Seq[scala.Tuple2[java.nio.file.Path, sbt.nio.FileStamp]]]",{"hashes":[["D:\\CodeProject\\Scala\\Akka\\build.sbt","7c398510cea9698045255ad4d80d2b1267039db9"],["D:\\CodeProject\\Scala\\Akka\\project\\metals.sbt","bf548d1e33fc687b03356d6a8e66c3a08744a073"],["D:\\CodeProject\\Scala\\Akka\\project\\project\\metals.sbt","bf548d1e33fc687b03356d6a8e66c3a08744a073"]],"lastModifiedTimes":[]}]
+=======
+["sbt.Task[scala.collection.Seq[scala.Tuple2[java.nio.file.Path, sbt.nio.FileStamp]]]",{"hashes":[["/Users/admin/Desktop/Project/Scala/Akka/build.sbt","fc5826443982c4e83660220703f1e27b6c0da96c"],["/Users/admin/Desktop/Project/Scala/Akka/project/metals.sbt","bf548d1e33fc687b03356d6a8e66c3a08744a073"],["/Users/admin/Desktop/Project/Scala/Akka/project/project/metals.sbt","bf548d1e33fc687b03356d6a8e66c3a08744a073"]],"lastModifiedTimes":[]}]
+>>>>>>> b8d94212761607eeca45521949555563452632c5

@@ -1,0 +1,9 @@
+[debug] [akka-test] Classpath dependencies List()
+[debug] [akka-test] Dependencies from configurations List(akka)
+<<<<<<< HEAD
+[debug] Bloop wrote the configuration of project 'akka-test' to 'D:\CodeProject\Scala\Akka\.bloop\akka-test.json'
+[success] Generated .bloop\akka-test.json
+=======
+[debug] Bloop wrote the configuration of project 'akka-test' to '/Users/admin/Desktop/Project/Scala/Akka/.bloop/akka-test.json'
+[success] Generated .bloop/akka-test.json
+>>>>>>> b8d94212761607eeca45521949555563452632c5

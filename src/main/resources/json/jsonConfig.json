@@ -1,0 +1,6 @@
+{
+  "aJsonProperty": "rockTheJVM",
+  "akka": {
+    "loglevel" : "WARNING"
+  }
+}
