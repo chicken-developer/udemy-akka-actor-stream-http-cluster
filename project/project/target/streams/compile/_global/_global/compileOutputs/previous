@@ -1,5 +1,1 @@
-<<<<<<< HEAD
-["sbt.Task[scala.collection.Seq[java.nio.file.Path]]",["D:\\CodeProject\\Scala\\Akka\\project\\project\\target\\streams\\compile\\compileOutputs\\_global\\streams\\inc_compile_2.12.zip"]]
-=======
-["sbt.Task[scala.collection.Seq[java.nio.file.Path]]",["/Users/admin/Desktop/Project/Scala/Akka/project/project/target/streams/compile/compileOutputs/_global/streams/inc_compile_2.12.zip"]]
->>>>>>> b8d94212761607eeca45521949555563452632c5
+["sbt.Task[scala.collection.Seq[java.nio.file.Path]]",["D:\\CodeProject\\Scala\\udemy-akka-actor-stream-http-cluster\\project\\project\\target\\streams\\compile\\compileOutputs\\_global\\streams\\inc_compile_2.12.zip"]]

@@ -1,9 +1,4 @@
-[debug] [akka-build] Classpath dependencies List()
-[debug] [akka-build] Dependencies from configurations List()
-<<<<<<< HEAD
-[debug] Bloop wrote the configuration of project 'akka-build' to 'D:\CodeProject\Scala\Akka\project\.bloop\akka-build.json'
-[success] Generated .bloop\akka-build.json
-=======
-[debug] Bloop wrote the configuration of project 'akka-build' to '/Users/admin/Desktop/Project/Scala/Akka/project/.bloop/akka-build.json'
-[success] Generated .bloop/akka-build.json
->>>>>>> b8d94212761607eeca45521949555563452632c5
+[debug] [udemy-akka-actor-stream-http-cluster-build] Classpath dependencies List()
+[debug] [udemy-akka-actor-stream-http-cluster-build] Dependencies from configurations List()
+[debug] Bloop wrote the configuration of project 'udemy-akka-actor-stream-http-cluster-build' to 'D:\CodeProject\Scala\udemy-akka-actor-stream-http-cluster\project\.bloop\udemy-akka-actor-stream-http-cluster-build.json'
+[success] Generated .bloop\udemy-akka-actor-stream-http-cluster-build.json
