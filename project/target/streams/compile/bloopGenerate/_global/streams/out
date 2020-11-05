@@ -1,4 +1,4 @@
 [debug] [udemy-akka-actor-stream-http-cluster-build] Classpath dependencies List()
 [debug] [udemy-akka-actor-stream-http-cluster-build] Dependencies from configurations List()
-[debug] Bloop wrote the configuration of project 'udemy-akka-actor-stream-http-cluster-build' to 'D:\CodeProject\Scala\udemy-akka-actor-stream-http-cluster\project\.bloop\udemy-akka-actor-stream-http-cluster-build.json'
-[success] Generated .bloop\udemy-akka-actor-stream-http-cluster-build.json
+[debug] Bloop wrote the configuration of project 'udemy-akka-actor-stream-http-cluster-build' to '/home/dev/Desktop/Projects/Scala/udemy-akka-actor-stream-http-cluster/project/.bloop/udemy-akka-actor-stream-http-cluster-build.json'
+[success] Generated .bloop/udemy-akka-actor-stream-http-cluster-build.json
