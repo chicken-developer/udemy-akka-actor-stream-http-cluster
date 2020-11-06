@@ -69,7 +69,6 @@ object HighLevelExample extends App with GuitarStoreJsonProtocol {
             parameter('inStock.as[Boolean]){(isInStock: Boolean) =>
               val guitarsFuture: Future[Option[Guitar]] = (guitarDB ? FindGuitarsInStock(isInStock)).mapTo[Option[Guitar]]
               // SandBox
-              val noneOptionGuitar = Future[Option[Guitar]]
               //End of SandBox
               val entitiesGuitar = guitarsFuture.map { guitar =>
                 HttpEntity(
@@ -92,7 +91,37 @@ object HighLevelExample extends App with GuitarStoreJsonProtocol {
           }
 
     }
+  def toHttpEntity(payload: String) = HttpEntity(ContentTypes.`application/json`, payload)
 
+  val simplifiedGuitarServerRoute =
+    (pathPrefix("api" / "guitar") & get) {
+      path("inventory") {
+        parameter('inStock.as[Boolean]) { inStock =>
+          complete(
+            (guitarDB ? FindGuitarsInStock(inStock))
+              .mapTo[List[Guitar]]
+              .map(_.toJson.prettyPrint)
+              .map(toHttpEntity)
+          )
+        }
+      } ~
+        (path(IntNumber) | parameter('id.as[Int])) { guitarId =>
+          complete(
+            (guitarDB ? FindGuitarByID(guitarId))
+              .mapTo[Option[Guitar]]
+              .map(_.toJson.prettyPrint)
+              .map(toHttpEntity)
+          )
+        } ~
+        pathEndOrSingleSlash {
+          complete(
+            (guitarDB ? FindAllGuitars)
+              .mapTo[List[Guitar]]
+              .map(_.toJson.prettyPrint)
+              .map(toHttpEntity)
+          )
+        }
+    }
 
-  Http().bindAndHandle(guitarServerRoute, "localhost",8080)
+  Http().bindAndHandle(simplifiedGuitarServerRoute, "localhost", 8080)
 }

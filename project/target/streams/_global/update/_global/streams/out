@@ -1,4 +1,4 @@
 [debug] "not up to date. inChanged = true, force = false
-[debug] Updating ProjectRef(uri("file:/home/dev/Desktop/Projects/Scala/udemy-akka-actor-stream-http-cluster/project/"), "udemy-akka-actor-stream-http-cluster-build")...
-[debug] Done updating ProjectRef(uri("file:/home/dev/Desktop/Projects/Scala/udemy-akka-actor-stream-http-cluster/project/"), "udemy-akka-actor-stream-http-cluster-build")
+[debug] Updating ProjectRef(uri("file:/D:/CodeProject/Scala/udemy-akka-actor-stream-http-cluster/project/"), "udemy-akka-actor-stream-http-cluster-build")...
+[debug] Done updating ProjectRef(uri("file:/D:/CodeProject/Scala/udemy-akka-actor-stream-http-cluster/project/"), "udemy-akka-actor-stream-http-cluster-build")
 [warn] There may be incompatibilities among your library dependencies; run 'evicted' to see detailed eviction warnings.
