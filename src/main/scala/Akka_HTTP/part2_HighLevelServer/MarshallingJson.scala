@@ -2,8 +2,15 @@ package Akka_HTTP.part2_HighLevelServer
 
 import akka.actor.{Actor, ActorLogging, ActorSystem, Props}
 import akka.http.scaladsl.Http
+import akka.http.scaladsl.marshallers.sprayjson.SprayJsonSupport
+import akka.http.scaladsl.model.StatusCodes
+import spray.json._
 import akka.stream.Materializer
 import akka.http.scaladsl.server.Directives._
+import akka.pattern.ask
+import akka.util.Timeout
+
+import scala.concurrent.duration._
 
 case object GameAreaMap{
   case object GetAllPlayers
@@ -41,8 +48,13 @@ class GameArea extends Actor with ActorLogging{
   }
 }
 
+trait PlayerJsonProtocol extends DefaultJsonProtocol{
+  implicit val format: RootJsonFormat[Player] = jsonFormat3(Player)
+}
 
-object MarshallingJson extends App{
+object MarshallingJson extends App
+  with PlayerJsonProtocol
+  with SprayJsonSupport {
   implicit val system = ActorSystem("MarshallingJson")
   implicit val materializer = Materializer
 
@@ -72,30 +84,33 @@ object MarshallingJson extends App{
     DELETE /api/player with Json payload -> Remove player from map
    */
 
+  implicit val timeout = Timeout(2 seconds)
   val gameAreaMapRoute =
     pathPrefix("api" / "player"){
       get {
         (parameter('nickname.as[String]) | path(Segment)){ (nickname: String) =>
-          //TODO 2 & 3:
-          reject
+          complete((myGameAreaMap ? GetPlayer(nickname)).mapTo[Option[Player]])
         } ~
           path("class" / Segment){ (characterClass: String) =>
-            //TODO 4:
-            reject
+            val playerByClassFuture = (myGameAreaMap ? GetPlayerByClass(characterClass)).mapTo[List[Player]]
+            complete(playerByClassFuture)
+              }
           } ~
           pathEndOrSingleSlash {
-            reject
+            complete((myGameAreaMap ? GetAllPlayers).mapTo[List[Player]])
           }
       } ~
         post {
-          //TODO 5:
-          reject
+         entity(as[Player]){ player =>
+           complete((myGameAreaMap ? AddPlayer(player)).map(_ => StatusCodes.OK))
+         }
         } ~
         delete {
-          //TODO 6:
-          reject
+          entity(as[Player]){ player =>
+            complete((myGameAreaMap ? RemovePlayer(player)).map(_ => StatusCodes.OK))
+          }
         }
-    }
+
 
   Http().bindAndHandle(gameAreaMapRoute, "localhost", 8080)
 }
