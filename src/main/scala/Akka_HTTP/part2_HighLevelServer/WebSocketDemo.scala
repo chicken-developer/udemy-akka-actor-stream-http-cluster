@@ -12,42 +12,43 @@ import akka.stream.scaladsl.{Flow, Sink, Source}
 import akka.util.CompactByteString
 
 
-object WebSocketDemo extends App{
+object WebSocketDemo extends App {
   implicit val system = ActorSystem("WebSocketDemo")
   implicit val materializer = Materializer
+
   import system.dispatcher
-  
+
   val textMessage = TextMessage(Source.single("Hello via text message"))
   val binaryMessage = BinaryMessage(Source.single(CompactByteString("Hello via binary message")))
-  
-  val html = 
-                """<html>
-               |    <head>
-               |        <script>
-               |            var exampleSocket = new WebSocket("ws://localhost:8080/greeter");
-               |            console.log("starting websocket...");
-               |
-               |            exampleSocket.onmessage = function(event) {
-               |                var newChild = document.createElement("div");
-               |                newChild.innerText = event.data;
-               |                document.getElementById("1").appendChild(newChild);
-               |            };
-               |
-               |            exampleSocket.onopen = function(event) {
-               |                exampleSocket.send("socket seems to be open...");
-               |            };
-               |
-               |            exampleSocket.send("socket says: hello, server!");
-               |        </script>
-               |    </head>
-               |
-               |    <body>
-               |        Starting websocket...
-               |        <div id="1">
-               |        </div>
-               |    </body>
-               |
-               |</html>""".stripMargin
+
+  val html =
+    """<html>
+      |    <head>
+      |        <script>
+      |            var exampleSocket = new WebSocket("ws://localhost:8080/greeter");
+      |            console.log("starting websocket...");
+      |
+      |            exampleSocket.onmessage = function(event) {
+      |                var newChild = document.createElement("div");
+      |                newChild.innerText = event.data;
+      |                document.getElementById("1").appendChild(newChild);
+      |            };
+      |
+      |            exampleSocket.onopen = function(event) {
+      |                exampleSocket.send("socket seems to be open...");
+      |            };
+      |
+      |            exampleSocket.send("socket says: hello, server!");
+      |        </script>
+      |    </head>
+      |
+      |    <body>
+      |        Starting websocket...
+      |        <div id="1">
+      |        </div>
+      |    </body>
+      |
+      |</html>""".stripMargin
 
   def websocketFlow: Flow[Message, Message, Any] = Flow[Message].map {
     case tm: TextMessage =>
@@ -91,8 +92,5 @@ object WebSocketDemo extends App{
     Sink.foreach[Message](println),
     socialMessages
   )
-
-
-}
 
 }
