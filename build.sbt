@@ -4,9 +4,9 @@ version := "0.1"
 
 scalaVersion := "2.12.12"
 
-val akkaVersion = "2.6.6"
+val akkaVersion = "2.6.10"
 val scalaTestVersion = "3.0.5"
-val akkaHttpVersion = "10.1.12"
+val akkaHttpVersion = "10.2.2"
 
 
 libraryDependencies ++= Seq(
@@ -30,5 +30,13 @@ libraryDependencies ++= Seq(
   "com.typesafe.akka" %% "akka-stream-testkit" % akkaVersion,
   "com.typesafe.akka" %% "akka-http-testkit" % akkaHttpVersion,
   // JWT
-  "com.pauldijou" %% "jwt-spray-json" % "2.1.0"
+  "com.pauldijou" %% "jwt-spray-json" % "2.1.0",
+
+  //Akka Remoting and Cluster
+  "com.typesafe.akka" %% "akka-remote" % akkaVersion,
+  "com.typesafe.akka" %% "akka-cluster" % akkaVersion,
+  "com.typesafe.akka" %% "akka-cluster-sharding" % "2.5.32",
+  "com.typesafe.akka" %% "akka-cluster-tools" % akkaVersion,
+  "io.netty" % "netty" % "3.10.6.Final"
+
 )
