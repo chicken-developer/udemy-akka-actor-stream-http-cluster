@@ -5,7 +5,7 @@ import akka.actor.SupervisorStrategy.{Escalate, Restart, Resume, Stop}
 import scala.concurrent.duration._
 import akka.actor.{Actor, ActorLogging, ActorSystem, OneForOneStrategy, Props}
 import akka.pattern.{Backoff, BackoffSupervisor}
-
+import scala.concurrent.duration._
 import scala.io.Source
 
 object BackoffSupervisorPattern extends App{

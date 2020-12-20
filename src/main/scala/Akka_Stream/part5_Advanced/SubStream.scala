@@ -13,7 +13,7 @@ object SubStream extends App {
   //1. group stream by a certain function
   val wordSource = Source(List("Akka", "is", "interesting", "and", "amazing", "language"))
   val group = wordSource.groupBy(30, {
-    case word: String if(word.isEmpty) => '\0'
+    case word: String if(word.isEmpty) => '\u0000'
     case word: String => word.toLowerCase().charAt(0)
   })
 //  group.to(Sink.fold(0)((count, word) => {

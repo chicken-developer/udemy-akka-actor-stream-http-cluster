@@ -1,63 +1,8 @@
-[error] sbt.librarymanagement.ResolveException: Error downloading com.typesafe.akka:akka-actor_3.0:2.6.6
+[error] sbt.librarymanagement.ResolveException: Error downloading org.scalatest:scalatest_2.13:3.0.5
 [error]   Not found
 [error]   Not found
-[error]   not found: C:\Users\quynh\.ivy2\local\com.typesafe.akka\akka-actor_3.0\2.6.6\ivys\ivy.xml
-[error]   not found: https://repo1.maven.org/maven2/com/typesafe/akka/akka-actor_3.0/2.6.6/akka-actor_3.0-2.6.6.pom
-[error] Error downloading com.typesafe.akka:akka-http-spray-json_3.0:10.1.12
-[error]   Not found
-[error]   Not found
-[error]   not found: C:\Users\quynh\.ivy2\local\com.typesafe.akka\akka-http-spray-json_3.0\10.1.12\ivys\ivy.xml
-[error]   not found: https://repo1.maven.org/maven2/com/typesafe/akka/akka-http-spray-json_3.0/10.1.12/akka-http-spray-json_3.0-10.1.12.pom
-[error] Error downloading com.typesafe.akka:akka-testkit_3.0:2.6.6
-[error]   Not found
-[error]   Not found
-[error]   not found: C:\Users\quynh\.ivy2\local\com.typesafe.akka\akka-testkit_3.0\2.6.6\ivys\ivy.xml
-[error]   not found: https://repo1.maven.org/maven2/com/typesafe/akka/akka-testkit_3.0/2.6.6/akka-testkit_3.0-2.6.6.pom
-[error] Error downloading com.typesafe.akka:akka-stream-testkit_3.0:2.6.6
-[error]   Not found
-[error]   Not found
-[error]   not found: C:\Users\quynh\.ivy2\local\com.typesafe.akka\akka-stream-testkit_3.0\2.6.6\ivys\ivy.xml
-[error]   not found: https://repo1.maven.org/maven2/com/typesafe/akka/akka-stream-testkit_3.0/2.6.6/akka-stream-testkit_3.0-2.6.6.pom
-[error] Error downloading com.pauldijou:jwt-spray-json_3.0:2.1.0
-[error]   Not found
-[error]   Not found
-[error]   not found: C:\Users\quynh\.ivy2\local\com.pauldijou\jwt-spray-json_3.0\2.1.0\ivys\ivy.xml
-[error]   not found: https://repo1.maven.org/maven2/com/pauldijou/jwt-spray-json_3.0/2.1.0/jwt-spray-json_3.0-2.1.0.pom
-[error] Error downloading com.typesafe.akka:akka-stream_3.0:2.6.6
-[error]   Not found
-[error]   Not found
-[error]   not found: C:\Users\quynh\.ivy2\local\com.typesafe.akka\akka-stream_3.0\2.6.6\ivys\ivy.xml
-[error]   not found: https://repo1.maven.org/maven2/com/typesafe/akka/akka-stream_3.0/2.6.6/akka-stream_3.0-2.6.6.pom
-[error] Error downloading com.typesafe.akka:akka-actor-typed_3.0:2.6.6
-[error]   Not found
-[error]   Not found
-[error]   not found: C:\Users\quynh\.ivy2\local\com.typesafe.akka\akka-actor-typed_3.0\2.6.6\ivys\ivy.xml
-[error]   not found: https://repo1.maven.org/maven2/com/typesafe/akka/akka-actor-typed_3.0/2.6.6/akka-actor-typed_3.0-2.6.6.pom
-[error] Error downloading org.scalatest:scalatest_3.0:3.0.5
-[error]   Not found
-[error]   Not found
-[error]   not found: C:\Users\quynh\.ivy2\local\org.scalatest\scalatest_3.0\3.0.5\ivys\ivy.xml
-[error]   not found: https://repo1.maven.org/maven2/org/scalatest/scalatest_3.0/3.0.5/scalatest_3.0-3.0.5.pom
-[error] Error downloading com.typesafe.akka:akka-http_3.0:10.1.12
-[error]   Not found
-[error]   Not found
-[error]   not found: C:\Users\quynh\.ivy2\local\com.typesafe.akka\akka-http_3.0\10.1.12\ivys\ivy.xml
-[error]   not found: https://repo1.maven.org/maven2/com/typesafe/akka/akka-http_3.0/10.1.12/akka-http_3.0-10.1.12.pom
-[error] Error downloading org.scala-lang:scala-library:3.0
-[error]   Not found
-[error]   Not found
-[error]   not found: C:\Users\quynh\.ivy2\local\org.scala-lang\scala-library\3.0\ivys\ivy.xml
-[error]   not found: https://repo1.maven.org/maven2/org/scala-lang/scala-library/3.0/scala-library-3.0.pom
-[error] Error downloading com.typesafe.akka:akka-slf4j_3.0:2.6.6
-[error]   Not found
-[error]   Not found
-[error]   not found: C:\Users\quynh\.ivy2\local\com.typesafe.akka\akka-slf4j_3.0\2.6.6\ivys\ivy.xml
-[error]   not found: https://repo1.maven.org/maven2/com/typesafe/akka/akka-slf4j_3.0/2.6.6/akka-slf4j_3.0-2.6.6.pom
-[error] Error downloading com.typesafe.akka:akka-http-testkit_3.0:10.1.12
-[error]   Not found
-[error]   Not found
-[error]   not found: C:\Users\quynh\.ivy2\local\com.typesafe.akka\akka-http-testkit_3.0\10.1.12\ivys\ivy.xml
-[error]   not found: https://repo1.maven.org/maven2/com/typesafe/akka/akka-http-testkit_3.0/10.1.12/akka-http-testkit_3.0-10.1.12.pom
+[error]   not found: C:\Users\quynh\.ivy2\local\org.scalatest\scalatest_2.13\3.0.5\ivys\ivy.xml
+[error]   not found: https://repo1.maven.org/maven2/org/scalatest/scalatest_2.13/3.0.5/scalatest_2.13-3.0.5.pom
 [error] 	at lmcoursier.CoursierDependencyResolution.unresolvedWarningOrThrow(CoursierDependencyResolution.scala:249)
 [error] 	at lmcoursier.CoursierDependencyResolution.$anonfun$update$35(CoursierDependencyResolution.scala:218)
 [error] 	at scala.util.Either$LeftProjection.map(Either.scala:573)
@@ -88,63 +33,8 @@
 [error] 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
 [error] 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
 [error] 	at java.base/java.lang.Thread.run(Thread.java:832)
-[error] (ssExtractDependencies) sbt.librarymanagement.ResolveException: Error downloading com.typesafe.akka:akka-actor_3.0:2.6.6
+[error] (ssExtractDependencies) sbt.librarymanagement.ResolveException: Error downloading org.scalatest:scalatest_2.13:3.0.5
 [error]   Not found
 [error]   Not found
-[error]   not found: C:\Users\quynh\.ivy2\local\com.typesafe.akka\akka-actor_3.0\2.6.6\ivys\ivy.xml
-[error]   not found: https://repo1.maven.org/maven2/com/typesafe/akka/akka-actor_3.0/2.6.6/akka-actor_3.0-2.6.6.pom
-[error] Error downloading com.typesafe.akka:akka-http-spray-json_3.0:10.1.12
-[error]   Not found
-[error]   Not found
-[error]   not found: C:\Users\quynh\.ivy2\local\com.typesafe.akka\akka-http-spray-json_3.0\10.1.12\ivys\ivy.xml
-[error]   not found: https://repo1.maven.org/maven2/com/typesafe/akka/akka-http-spray-json_3.0/10.1.12/akka-http-spray-json_3.0-10.1.12.pom
-[error] Error downloading com.typesafe.akka:akka-testkit_3.0:2.6.6
-[error]   Not found
-[error]   Not found
-[error]   not found: C:\Users\quynh\.ivy2\local\com.typesafe.akka\akka-testkit_3.0\2.6.6\ivys\ivy.xml
-[error]   not found: https://repo1.maven.org/maven2/com/typesafe/akka/akka-testkit_3.0/2.6.6/akka-testkit_3.0-2.6.6.pom
-[error] Error downloading com.typesafe.akka:akka-stream-testkit_3.0:2.6.6
-[error]   Not found
-[error]   Not found
-[error]   not found: C:\Users\quynh\.ivy2\local\com.typesafe.akka\akka-stream-testkit_3.0\2.6.6\ivys\ivy.xml
-[error]   not found: https://repo1.maven.org/maven2/com/typesafe/akka/akka-stream-testkit_3.0/2.6.6/akka-stream-testkit_3.0-2.6.6.pom
-[error] Error downloading com.pauldijou:jwt-spray-json_3.0:2.1.0
-[error]   Not found
-[error]   Not found
-[error]   not found: C:\Users\quynh\.ivy2\local\com.pauldijou\jwt-spray-json_3.0\2.1.0\ivys\ivy.xml
-[error]   not found: https://repo1.maven.org/maven2/com/pauldijou/jwt-spray-json_3.0/2.1.0/jwt-spray-json_3.0-2.1.0.pom
-[error] Error downloading com.typesafe.akka:akka-stream_3.0:2.6.6
-[error]   Not found
-[error]   Not found
-[error]   not found: C:\Users\quynh\.ivy2\local\com.typesafe.akka\akka-stream_3.0\2.6.6\ivys\ivy.xml
-[error]   not found: https://repo1.maven.org/maven2/com/typesafe/akka/akka-stream_3.0/2.6.6/akka-stream_3.0-2.6.6.pom
-[error] Error downloading com.typesafe.akka:akka-actor-typed_3.0:2.6.6
-[error]   Not found
-[error]   Not found
-[error]   not found: C:\Users\quynh\.ivy2\local\com.typesafe.akka\akka-actor-typed_3.0\2.6.6\ivys\ivy.xml
-[error]   not found: https://repo1.maven.org/maven2/com/typesafe/akka/akka-actor-typed_3.0/2.6.6/akka-actor-typed_3.0-2.6.6.pom
-[error] Error downloading org.scalatest:scalatest_3.0:3.0.5
-[error]   Not found
-[error]   Not found
-[error]   not found: C:\Users\quynh\.ivy2\local\org.scalatest\scalatest_3.0\3.0.5\ivys\ivy.xml
-[error]   not found: https://repo1.maven.org/maven2/org/scalatest/scalatest_3.0/3.0.5/scalatest_3.0-3.0.5.pom
-[error] Error downloading com.typesafe.akka:akka-http_3.0:10.1.12
-[error]   Not found
-[error]   Not found
-[error]   not found: C:\Users\quynh\.ivy2\local\com.typesafe.akka\akka-http_3.0\10.1.12\ivys\ivy.xml
-[error]   not found: https://repo1.maven.org/maven2/com/typesafe/akka/akka-http_3.0/10.1.12/akka-http_3.0-10.1.12.pom
-[error] Error downloading org.scala-lang:scala-library:3.0
-[error]   Not found
-[error]   Not found
-[error]   not found: C:\Users\quynh\.ivy2\local\org.scala-lang\scala-library\3.0\ivys\ivy.xml
-[error]   not found: https://repo1.maven.org/maven2/org/scala-lang/scala-library/3.0/scala-library-3.0.pom
-[error] Error downloading com.typesafe.akka:akka-slf4j_3.0:2.6.6
-[error]   Not found
-[error]   Not found
-[error]   not found: C:\Users\quynh\.ivy2\local\com.typesafe.akka\akka-slf4j_3.0\2.6.6\ivys\ivy.xml
-[error]   not found: https://repo1.maven.org/maven2/com/typesafe/akka/akka-slf4j_3.0/2.6.6/akka-slf4j_3.0-2.6.6.pom
-[error] Error downloading com.typesafe.akka:akka-http-testkit_3.0:10.1.12
-[error]   Not found
-[error]   Not found
-[error]   not found: C:\Users\quynh\.ivy2\local\com.typesafe.akka\akka-http-testkit_3.0\10.1.12\ivys\ivy.xml
-[error]   not found: https://repo1.maven.org/maven2/com/typesafe/akka/akka-http-testkit_3.0/10.1.12/akka-http-testkit_3.0-10.1.12.pom
+[error]   not found: C:\Users\quynh\.ivy2\local\org.scalatest\scalatest_2.13\3.0.5\ivys\ivy.xml
+[error]   not found: https://repo1.maven.org/maven2/org/scalatest/scalatest_2.13/3.0.5/scalatest_2.13-3.0.5.pom
